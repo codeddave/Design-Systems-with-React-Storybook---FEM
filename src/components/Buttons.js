@@ -24,10 +24,10 @@ export const SecondaryButton = styled(Button)`
     color: white;
   }
 `;
-const TertiaryButton = styled(Button)`
-  background-color: ${primaryColor};
+export const TertiaryButton = styled(Button)`
+  background: none;
   border: none;
-  color: white;
+  color: ${primaryColor};
 `;
 
 export default PrimaryButton;
