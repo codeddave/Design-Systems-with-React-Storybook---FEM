@@ -4,6 +4,7 @@ import PrimaryButton, {
   SecondaryButton,
   TertiaryButton,
 } from "./components/Buttons";
+import { GlobalStyle } from "./utils";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <PrimaryButton>Hello</PrimaryButton>
       <SecondaryButton>Hello</SecondaryButton>
       <TertiaryButton>Hello</TertiaryButton>
+      <GlobalStyle />
     </div>
   );
 };
