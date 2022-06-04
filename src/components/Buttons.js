@@ -6,12 +6,17 @@ const Button = styled.button`
   padding: 12px 24px;
   font-size: 1rem;
   min-width: 100px;
+  margin-left: 2rem;
   cursor: pointer;
   font-family: "Roboto Mono", monospace;
   transition: background-color 0.2s linear, color 0.2s linear;
   &:hover {
     background-color: ${defalutTheme.primaryColorHover};
     color: ${defalutTheme.textColorOnPrimary};
+  }
+  &:focus {
+    outline: 2px solid ${defalutTheme.primaryColorHover};
+    outline-offset: 3px;
   }
 `;
 
