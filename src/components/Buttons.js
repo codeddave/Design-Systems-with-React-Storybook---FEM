@@ -18,6 +18,12 @@ const Button = styled.button`
     outline: 2px solid ${defalutTheme.primaryColorHover};
     outline-offset: 3px;
   }
+  &:active {
+    background-color: ${defalutTheme.primaryColorActive};
+    border-color: ${defalutTheme.primaryColorActive};
+
+    color: ${defalutTheme.textColorOnPrimary};
+  }
 `;
 
 const PrimaryButton = styled(Button)`
