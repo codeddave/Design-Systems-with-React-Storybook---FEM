@@ -10,5 +10,7 @@ export const defalutTheme = {
   textColorOnPrimary: neutral[100], //white
   textColor: neutral[600], //dark grey
   textColorInverted: neutral[100],
+  disabled: neutral[400],
+  textOnDisabled: neutral[300],
   primaryFont,
 };
