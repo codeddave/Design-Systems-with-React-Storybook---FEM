@@ -10,8 +10,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const App = () => {
   return (
     <div>
-      <PrimaryButton>Hello</PrimaryButton>
-      <SecondaryButton>Hello</SecondaryButton>
+      <PrimaryButton disabled>Hello</PrimaryButton>
+      <SecondaryButton disabled>Hello</SecondaryButton>
       <TertiaryButton>Hello</TertiaryButton>
       <GlobalStyle />
     </div>

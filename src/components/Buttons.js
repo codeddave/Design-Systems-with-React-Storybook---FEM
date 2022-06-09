@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { defalutTheme, typeScale } from "../utils";
+import { defalutTheme } from "../utils";
 
 const Button = styled.button`
   border-radius: 2px;
@@ -21,7 +21,6 @@ const Button = styled.button`
   &:active {
     background-color: ${defalutTheme.primaryColorActive};
     border-color: ${defalutTheme.primaryColorActive};
-
     color: ${defalutTheme.textColorOnPrimary};
   }
 `;
@@ -30,6 +29,11 @@ const PrimaryButton = styled(Button)`
   background-color: ${defalutTheme.primaryColor};
   border: none;
   color: white;
+  &:disabled {
+    background-color: ${defalutTheme.disabled};
+    cursor: not-allowed;
+    color: ${defalutTheme.textOnDisabled};
+  }
 `;
 export const SecondaryButton = styled(Button)`
   background: none;
@@ -38,6 +42,11 @@ export const SecondaryButton = styled(Button)`
   &:hover {
     background-color: ${defalutTheme.primaryColor};
     color: white;
+  }
+  &:disabled {
+    background-color: none;
+    cursor: not-allowed;
+    color: ${defalutTheme.disabled};
   }
 `;
 export const TertiaryButton = styled(Button)`

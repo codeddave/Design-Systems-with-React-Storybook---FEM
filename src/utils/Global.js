@@ -6,8 +6,7 @@ export const GlobalStyle = createGlobalStyle`
  ${normalize()}
   html {
       font-size:16px; 
-      box-sizing:border-box; 
-       
+      box-sizing:border-box;    
   }
   *, *:before, *:after
   {
@@ -16,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         font-family:${primaryFont} ;
         margin:0 ;
+        margin-top:2rem ;
     }
   main{
       width:90% ;
