@@ -44,7 +44,7 @@ export const SecondaryButton = styled(Button)`
     color: white;
   }
   &:disabled {
-    background-color: none;
+    background: none;
     cursor: not-allowed;
     color: ${defalutTheme.disabled};
   }
@@ -53,6 +53,11 @@ export const TertiaryButton = styled(Button)`
   background: none;
   border: none;
   color: ${defalutTheme.primaryColor};
+  &:disabled {
+    background: none;
+    cursor: not-allowed;
+    color: ${defalutTheme.disabled};
+  }
 `;
 
 export default PrimaryButton;

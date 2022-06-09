@@ -12,7 +12,7 @@ const App = () => {
     <div>
       <PrimaryButton disabled>Hello</PrimaryButton>
       <SecondaryButton disabled>Hello</SecondaryButton>
-      <TertiaryButton>Hello</TertiaryButton>
+      <TertiaryButton disabled>Hello</TertiaryButton>
       <GlobalStyle />
     </div>
   );
