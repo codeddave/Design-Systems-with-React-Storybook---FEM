@@ -48,6 +48,8 @@ const PrimaryButton = styled(Button)`
     cursor: not-allowed;
     color: ${defalutTheme.textOnDisabled};
   }
+
+  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 export const SecondaryButton = styled(Button)`
   background: none;
@@ -62,6 +64,7 @@ export const SecondaryButton = styled(Button)`
     cursor: not-allowed;
     color: ${defalutTheme.disabled};
   }
+  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 export const TertiaryButton = styled(Button)`
   background: none;
@@ -72,6 +75,7 @@ export const TertiaryButton = styled(Button)`
     cursor: not-allowed;
     color: ${defalutTheme.disabled};
   }
+  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 
 export default PrimaryButton;
