@@ -11,7 +11,17 @@ const BUTTON_MODIFIERS = {
   large: () => `
   font-size: ${typeScale.header5};
   padding: 16px 24px;    
-  
+  `,
+  warning: () => `
+  background-color: ${defalutTheme.status.warningColor};
+  color: ${defalutTheme.textColorInverted};
+
+  &:hover, &:focus {
+    background-color: ${defalutTheme.status.warningColorHover};
+  }
+  `,
+  error: () => `
+  background-color: ${defalutTheme.status.errorColor};
   `,
 };
 
