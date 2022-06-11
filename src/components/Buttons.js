@@ -18,7 +18,11 @@ const BUTTON_MODIFIERS = {
 
   &:hover, &:focus {
     background-color: ${defalutTheme.status.warningColorHover};
+    outline: 3px solid ${defalutTheme.status.warningColorHover};
   }
+  &:active {
+    background-color: ${defalutTheme.status.warningColorActive};
+
   `,
   error: () => `
   background-color: ${defalutTheme.status.errorColor};
