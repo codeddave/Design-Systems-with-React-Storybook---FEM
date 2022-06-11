@@ -25,11 +25,14 @@ const BUTTON_MODIFIERS = {
 
   `,
   secondaryButtonWarning: () => `
-  
       background: none;
       border: 2px solid ${defalutTheme.status.warningColor};
       color: ${defalutTheme.status.warningColor};
   `,
+  tertiaryButtonWarning: () => `
+  background: none;
+  color: ${defalutTheme.status.warningColor};
+`,
   error: () => `
   background-color: ${defalutTheme.status.errorColor};
   `,
