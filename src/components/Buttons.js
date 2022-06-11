@@ -24,6 +24,12 @@ const BUTTON_MODIFIERS = {
     background-color: ${defalutTheme.status.warningColorActive};
 
   `,
+  secondaryButtonWarning: () => `
+  
+      background: none;
+      border: 2px solid ${defalutTheme.status.warningColor};
+      color: ${defalutTheme.status.warningColor};
+  `,
   error: () => `
   background-color: ${defalutTheme.status.errorColor};
   `,
