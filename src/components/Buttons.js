@@ -1,5 +1,19 @@
 import styled from "styled-components";
-import { defalutTheme } from "../utils";
+import { applyStyleModifiers } from "styled-components-modifiers";
+import { defalutTheme, typeScale } from "../utils";
+
+const BUTTON_MODIFIERS = {
+  small: () => `
+  font-size: ${typeScale.helperText};
+  padding: 8px;
+
+  `,
+  large: () => `
+  font-size: ${typeScale.header5};
+  padding: 16px 24px;    
+  
+  `,
+};
 
 const Button = styled.button`
   border-radius: 2px;
