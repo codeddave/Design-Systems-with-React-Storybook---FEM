@@ -35,7 +35,22 @@ const BUTTON_MODIFIERS = {
 `,
   error: () => `
   background-color: ${defalutTheme.status.errorColor};
+  &:hover, &:focus {
+    background-color: ${defalutTheme.status.errorColorHover};
+    outline: 3px solid ${defalutTheme.status.errorColorHover};
+  }
+  &:active {
+    background-color: ${defalutTheme.status.errorColorActive};
   `,
+  secondaryButtonError: () => `
+  background: none; 
+  border: 2px solid ${defalutTheme.status.errorColor};
+  color: ${defalutTheme.status.errorColor};
+`,
+  tertiaryButtonError: () => `
+background: none;
+color: ${defalutTheme.status.errorColor};
+`,
 };
 
 const Button = styled.button`
